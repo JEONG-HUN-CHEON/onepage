@@ -1,0 +1,55 @@
+@charset "uth-8";
+
+*{margin:0;padding:0}
+ul,li{list-style:none}
+
+.container{ position: absolute; margin-top:4%;text-align:center}
+
+/* 탭메뉴 공통 */
+ .tab_content{width:116%;margin-top: 1%; height: 550px;}
+.tab_menu li, .tab_content li{}
+
+/* 탭메뉴 버튼 */
+.tab_menu {display:contents;table-layout:fixed; margin-left: 3%}
+.tab_menu li{display:table-cell;padding:20px 0;cursor:pointer}
+.tab_menu li img{vertical-align:middle; width: 50%;}
+.tab_menu li.on{background-color: bisque;}
+.tab_menu li+li{border-left:none}
+
+/* 탭메뉴 컨텐츠 */
+.tab_content li{display:none;min-height:100%; margin-left: 1%;}
+.tab_content li.on{display:block}
+
+.cont_pic{
+    float: left;
+    width: 45%;
+    height: 90%;
+}
+.cont_pic img{
+    height: 100%;
+}
+.cont_text{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 50%;
+    
+}
+.cont_text h2{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+}
+.cont_text h4{
+    display: flex;
+    justify-content: flex-start; margin-top: 1%;
+}
+.cont_text p{
+    display: flex;
+    justify-content: flex-start; margin-top: 3%; color: #333;
+}
+
+
+
+
+
